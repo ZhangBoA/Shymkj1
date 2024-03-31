@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Universal - All In 1 Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <meta name="keywords" content="上海刈麦科技有限公司" />
+    <meta name="description" content="上海刈麦科技有限公司" />    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <!-- Swiper slider-->
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+    <!-- Choices.js [Custom select]-->
+    <link rel="stylesheet" href="vendor/choices.js/public/assets/styles/choices.css">
+    <!-- Theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon and apple touch icons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+  <header id="header">
+    <div class="my-container">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light"> <a class="navbar-brand" href="#"> <h3 class="desc-title">上海刈麦科技有限公司</h3> </a>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav ">
+              <li class="nav-item active"> <a class="nav-link" href="index.html" >首页</a> </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主要内容 开始 -->
+  <div class="swiper-container pc">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <img src="images/5d2338f34fa1a.png" alt="" class="avatar p-1 flex-shrink-0" height="800"> </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="swiper-container web">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <img src="images/5d2338f7947fd.png" alt="" class="iavatar p-1 flex-shrink-0"> </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="container">
+    <div class="about"> <img class="avatar p-1 flex-shrink-0" src="images/about.png">
+      <div class="about-desc">
+        <h3 class="desc-title">经营范围</h3>
+        <p class="desc-p2"> 一般项目：技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；软件开发；
+          企业形象策划；市场策划营销；市场掉擦汗（不含涉外调查）；
+          摄影扩印服务；摄影及视频制作；广告设计、代理；广告制作；广告发布；计算机软硬件及辅助设配批发；
+          计算机硬件及辅助设备零售；互联网销售（除销售需要的许可的商品）；家具销售。（除依法须经批准的项目外，凭经营执照依法自主开展经营活动。）</p>
+      </div>
+    </div>
+  </div>
+    <!-- JavaScript files-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/waypoints/lib/noframework.waypoints.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/choices.js/public/assets/scripts/choices.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+      // ------------------------------------------------------- //
+      //   Inject SVG Sprite - 
+      //   see more here 
+      //   https://css-tricks.com/ajaxing-svg-sprite/
+      // ------------------------------------------------------ //
+      function injectSvgSprite(path) {
+      
+          var ajax = new XMLHttpRequest();
+          ajax.open("GET", path, true);
+          ajax.send();
+          ajax.onload = function(e) {
+          var div = document.createElement("div");
+          div.className = 'd-none';
+          div.innerHTML = ajax.responseText;
+          document.body.insertBefore(div, document.body.childNodes[0]);
+          }
+      }
+      // this is set to BootstrapTemple website as you cannot 
+      // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+      // while using file:// protocol
+      // pls don't forget to change to your domain :)
+      injectSvgSprite('icons/orion-svg-sprite.svg'); 
+      
+    </script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+
+  <footer>
+    <div class="container sx-footer">
+      <div class="left">
+        <p class="address">公司名称：上海刈麦科技有限公司</p>
+        <p class="address">公司电话：18762813996</p>
+        <p class="address">公司地址：上海市闵行区元江路号第1栋</p>
+      </div>
+      <div class="right">
+        <p class="wx">官方微信</p>
+        <img src="images/ma.png" alt="微信二维码" class="avatar p-1 flex-shrink-0"> </div>
+    </div>
+  </footer>
+</html>
